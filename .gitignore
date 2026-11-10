@@ -1,0 +1,46 @@
+# Entorno y cachés
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+
+# Cobertura generada
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+coverage.json
+
+# Configuración privada
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+config/.channel-store/
+
+# Respaldos y temporales
+.backups/
+.DS_Store
+tmp/
+*.tmp
+
+# Salidas derivadas; conservar originales y documentación
+canales/**/previews/
+canales/**/exports/
+canales/**/logs/
+
+# Persistencia operativa y copias locales
+data/
+shared/library/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+
+# Artefactos del motor piloto (registros editoriales fuera de esta ruta)
+canales/**/episodios/

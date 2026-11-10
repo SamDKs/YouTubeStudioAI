@@ -1,0 +1,7 @@
+# Dependencias directas del flujo vigente, comprobadas en .venv.
+# Este archivo no instala modelos ni habilita proveedores de pago.
+streamlit==1.51.0
+Pillow==12.3.0
+jsonschema==4.26.0
+numpy==2.5.4
+requests==2.34.2

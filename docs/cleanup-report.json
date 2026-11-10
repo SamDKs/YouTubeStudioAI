@@ -1,0 +1,633 @@
+{
+  "removed_code_and_obsolete_tests": [
+    "app/align_episode.py",
+    "app/application/alignment_executor.py",
+    "app/application/assets.py",
+    "app/application/channel_configuration.py",
+    "app/application/create_channel.py",
+    "app/application/dto.py",
+    "app/application/editing.py",
+    "app/application/editorial_executor.py",
+    "app/application/editorial_import.py",
+    "app/application/episode_ports.py",
+    "app/application/episodes.py",
+    "app/application/ideas.py",
+    "app/application/joint_production.py",
+    "app/application/local_drafts.py",
+    "app/application/local_executor.py",
+    "app/application/pilot_executor.py",
+    "app/application/pilot_ports.py",
+    "app/application/pilot_service.py",
+    "app/application/planning.py",
+    "app/application/ports.py",
+    "app/application/production.py",
+    "app/application/providers.py",
+    "app/application/publishing.py",
+    "app/application/scheduling.py",
+    "app/application/scripts.py",
+    "app/application/studio_ports.py",
+    "app/application/use_cases.py",
+    "app/application/validation.py",
+    "app/application/visual_preview.py",
+    "app/application/voice_auditions.py",
+    "app/application/workspace_ports.py",
+    "app/application/workspace_queries.py",
+    "app/application/workspace_services.py",
+    "app/core/__init__.py",
+    "app/core/pilot_config.py",
+    "app/core/settings.py",
+    "app/domain/alignment.py",
+    "app/domain/editing.py",
+    "app/domain/editorial.py",
+    "app/domain/models.py",
+    "app/domain/pipeline.py",
+    "app/domain/production_configuration.py",
+    "app/domain/production_profiles.py",
+    "app/domain/providers.py",
+    "app/episode_tools.py",
+    "app/infrastructure/catalog_transactions.py",
+    "app/infrastructure/file_channel_creation.py",
+    "app/infrastructure/json_catalog_repository.py",
+    "app/infrastructure/markdown_parser.py",
+    "app/infrastructure/markdown_record_repository.py",
+    "app/infrastructure/media/artifacts.py",
+    "app/infrastructure/media/atomic_io.py",
+    "app/infrastructure/media/cinematic_renderer.py",
+    "app/infrastructure/media/editorial_speech.py",
+    "app/infrastructure/media/elevenlabs_provider.py",
+    "app/infrastructure/media/episode_files.py",
+    "app/infrastructure/media/episode_paths.py",
+    "app/infrastructure/media/ffmpeg_renderer.py",
+    "app/infrastructure/media/free_sources.py",
+    "app/infrastructure/media/kokoro_speech.py",
+    "app/infrastructure/media/library.py",
+    "app/infrastructure/media/local_provider.py",
+    "app/infrastructure/media/local_timeline.py",
+    "app/infrastructure/media/openai_providers.py",
+    "app/infrastructure/media/runtime.py",
+    "app/infrastructure/media/scene_graphics.py",
+    "app/infrastructure/media/storage_audit.py",
+    "app/infrastructure/media/visual_preview_renderer.py",
+    "app/infrastructure/media/whisper_alignment.py",
+    "app/infrastructure/media/wow_graphics.py",
+    "app/infrastructure/oauth_flow.py",
+    "app/infrastructure/provider_catalog.py",
+    "app/infrastructure/record_template.py",
+    "app/infrastructure/sqlite/catalog.py",
+    "app/infrastructure/sqlite/channel_creation.py",
+    "app/infrastructure/sqlite/database.py",
+    "app/infrastructure/sqlite/episodes.py",
+    "app/infrastructure/sqlite/ideas.py",
+    "app/infrastructure/sqlite/initialization.py",
+    "app/infrastructure/sqlite/jobs.py",
+    "app/infrastructure/sqlite/maintenance.py",
+    "app/infrastructure/sqlite/pilot_queue.py",
+    "app/infrastructure/sqlite/publishing.py",
+    "app/infrastructure/sqlite/scheduling.py",
+    "app/infrastructure/sqlite/scripts.py",
+    "app/infrastructure/sqlite/store.py",
+    "app/infrastructure/sqlite/studio.py",
+    "app/infrastructure/youtube.py",
+    "app/local_demo.py",
+    "app/maintenance.py",
+    "app/pilot_bootstrap.py",
+    "app/presentation/activity_page.py",
+    "app/presentation/calendar_views.py",
+    "app/presentation/channel_form.py",
+    "app/presentation/channels.py",
+    "app/presentation/dashboard.py",
+    "app/presentation/editor_page.py",
+    "app/presentation/editorial.py",
+    "app/presentation/episodes_page.py",
+    "app/presentation/idea_forms.py",
+    "app/presentation/ideas_page.py",
+    "app/presentation/local_batch_panel.py",
+    "app/presentation/navigation.py",
+    "app/presentation/overview.py",
+    "app/presentation/pilot_form.py",
+    "app/presentation/pilot_results.py",
+    "app/presentation/production_forms.py",
+    "app/presentation/production_page.py",
+    "app/presentation/production_settings.py",
+    "app/presentation/providers_page.py",
+    "app/presentation/publishing_page.py",
+    "app/presentation/research_page.py",
+    "app/presentation/resources_page.py",
+    "app/presentation/schedule_panel.py",
+    "app/presentation/script_forms.py",
+    "app/presentation/scripts_page.py",
+    "app/presentation/settings_page.py",
+    "app/presentation/shell.py",
+    "app/presentation/workspace_common.py",
+    "app/presentation/workspace_dialogs.py",
+    "app/produce_package.py",
+    "app/provider_tools.py",
+    "app/storage_report.py",
+    "app/studio_bootstrap.py",
+    "app/visual_preview.py",
+    "app/domain/pilot.py",
+    "app/domain/workspace.py",
+    "app/domain/policies.py",
+    "app/presentation/package_history.py",
+    "tests/helpers.py",
+    "tests/fixtures.py",
+    "tests/smoke/test_planning_navigation.py",
+    "tests/smoke/test_persistent_workspace.py",
+    "tests/smoke/test_dashboard.py",
+    "tests/smoke/test_dynamic_dashboard.py",
+    "tests/unit/test_parser.py",
+    "tests/unit/test_workspace_policies.py",
+    "tests/unit/test_use_cases.py",
+    "tests/unit/test_create_channel.py",
+    "tests/unit/test_domain.py",
+    "tests/unit/test_planning.py",
+    "tests/unit/test_settings.py",
+    "tests/integration/test_canonical_workspace.py",
+    "tests/integration/test_pilot_engine.py",
+    "tests/integration/test_channel_creation.py",
+    "tests/integration/test_workspace_editorial.py",
+    "tests/integration/test_editorial_planning.py",
+    "tests/integration/test_consolidation.py",
+    "tests/integration/test_local_studio.py",
+    "tests/integration/test_visual_preview.py",
+    "tests/integration/test_production_workspace.py",
+    "tests/integration/test_file_repositories.py",
+    "tests/integration/test_editorial_engine.py",
+    "ui/__init__.py"
+  ],
+  "moved": [
+    {
+      "from": "audio",
+      "to": "app/engine/audio"
+    },
+    {
+      "from": "domain",
+      "to": "app/engine/domain"
+    },
+    {
+      "from": "ingestion",
+      "to": "app/engine/ingestion"
+    },
+    {
+      "from": "pipeline",
+      "to": "app/engine/pipeline"
+    },
+    {
+      "from": "rendering",
+      "to": "app/engine/rendering"
+    },
+    {
+      "from": "timing",
+      "to": "app/engine/timing"
+    },
+    {
+      "from": "ui/workbench.py",
+      "to": "app/workbench.py"
+    }
+  ],
+  "removed_generated": [
+    {
+      "path": ".backups",
+      "bytes": 579738239,
+      "files": 171
+    },
+    {
+      "path": "config/pilots",
+      "bytes": 25989,
+      "files": 3
+    },
+    {
+      "path": "config/editorial",
+      "bytes": 16598,
+      "files": 2
+    },
+    {
+      "path": "data/models/whisper-multilingual",
+      "bytes": 147951832,
+      "files": 2
+    },
+    {
+      "path": "data/library-probe",
+      "bytes": 0,
+      "files": 0
+    },
+    {
+      "path": "canales/01_misterios/episodios",
+      "bytes": 235757212,
+      "files": 1162
+    },
+    {
+      "path": "canales/02_tecnologia_ia/episodios",
+      "bytes": 52129840,
+      "files": 415
+    },
+    {
+      "path": "canales/03_ciencia_curiosidades/episodios",
+      "bytes": 28244603,
+      "files": 244
+    },
+    {
+      "path": "canales/01_misterios/chatgpt_work_file/MIS-E001_Wow_1977_Production_Package_v1.zip",
+      "bytes": 18907540,
+      "files": 1
+    },
+    {
+      "path": "data/pilot_TEC_es-419_sample.json",
+      "bytes": 327,
+      "files": 1
+    },
+    {
+      "path": "data/pilot_CIE_es-419_align.json",
+      "bytes": 284,
+      "files": 1
+    },
+    {
+      "path": "data/pilot_MIS_es-419_sample.json",
+      "bytes": 327,
+      "files": 1
+    },
+    {
+      "path": "data/pilot_MIS_es-419_align.json",
+      "bytes": 284,
+      "files": 1
+    },
+    {
+      "path": "data/pilot_TEC_es-419_align.json",
+      "bytes": 284,
+      "files": 1
+    },
+    {
+      "path": "data/pilot_CIE_es-419_sample.json",
+      "bytes": 327,
+      "files": 1
+    },
+    {
+      "path": "data/backups/studio-f01436e23b504d10a9797ca6356a7ca9.sqlite3-wal",
+      "bytes": 0,
+      "files": 1
+    },
+    {
+      "path": "data/backups/studio-f01436e23b504d10a9797ca6356a7ca9.sqlite3-shm",
+      "bytes": 32768,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-5-e2ecd29c32f04bdd9a0999c1d94ee009.sqlite3",
+      "bytes": 729088,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-7-01c4d83241554e2e822f85bc8cb30f0f.sqlite3",
+      "bytes": 1249280,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-10-940c16c5662041d39dc42ce4b489d1db.sqlite3",
+      "bytes": 2994176,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-14-9c683fa88d85431bae0330b1741b8fc1.sqlite3",
+      "bytes": 4771840,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-11-c2e9886b46ed46d98bee625de42ba6d4.sqlite3",
+      "bytes": 4374528,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-9-e962aa6a9b89409d9caf0d9bce88e19a.sqlite3",
+      "bytes": 1777664,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-8-b838a56c98c4404b82b376830bb7f41b.sqlite3",
+      "bytes": 1290240,
+      "files": 1
+    },
+    {
+      "path": "data/backups/studio-f01436e23b504d10a9797ca6356a7ca9.sqlite3",
+      "bytes": 430080,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-12-d1fcb62573f544968e21ccbdf27bb9cf.sqlite3",
+      "bytes": 4435968,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-13-cbf001a4668d47b4badb4acff68040eb.sqlite3",
+      "bytes": 4440064,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-4-09a1bcd1544f433f8fb4cf7f3a7b7891.sqlite3",
+      "bytes": 430080,
+      "files": 1
+    },
+    {
+      "path": "data/backups/before-schema-6-ee9a5ea3b7384f298fd189a7ed847497.sqlite3",
+      "bytes": 999424,
+      "files": 1
+    },
+    {
+      "path": "data/work/exports/MIS-E001_en-US/3a6e4a1f-84d8-47a1-9aab-1008a6603380",
+      "bytes": 29501476,
+      "files": 3
+    },
+    {
+      "path": "data/work/exports/MIS-E001_en-US/b6f90aa6-ca20-4216-8e0f-af37e3a2b1c5",
+      "bytes": 47715807,
+      "files": 3
+    },
+    {
+      "path": "data/work/exports/deliveries/ba1de147-0815-406d-9382-f65e2b253077/d100a90ab3ff27f9ce5cf2357a2b7a4d0284ccc1230107c70a48a39ffcd38464",
+      "bytes": 60078386,
+      "files": 8
+    },
+    {
+      "path": "data/work/exports/deliveries/ba1de147-0815-406d-9382-f65e2b253077/d100a90ab3ff27f9ce5cf2357a2b7a4d0284ccc1230107c70a48a39ffcd38464.zip",
+      "bytes": 60079306,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/3effcad1c07a49a384e6716700ace20b.normalized.wav",
+      "bytes": 573518,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/a2788aa91d84637ca136d86944c916d0d26e3e8285e1afb495073db31bcc3e55",
+      "bytes": 7025553,
+      "files": 30
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/ddc6c6d570cffff6e888a9b2d46ccb02d150496510dca01405d86ab3a86e07e7",
+      "bytes": 1264272,
+      "files": 30
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/f8466635ff9501dac97b9a93a678495d255c13778ba714c4acad86a186d746c2",
+      "bytes": 6184393,
+      "files": 10
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/abf6369125804a44a73f85f5203d5995.wav",
+      "bytes": 478252,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/b073cfc556dd41949f93de6ef38b97a1.concat",
+      "bytes": 624,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/a14fce4d84eb47ffaebad03feb016f0e.wav",
+      "bytes": 661548,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/f16bb0f081a8fb9d898ea5fac2b66eefc7e8ac58c475250f6b60c21bb6e7f115",
+      "bytes": 1154548,
+      "files": 10
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/c9ffdd91d584f5f4492fa4a7e71779ed1ab48adfe87338391b5178a3c21a8c45",
+      "bytes": 929694,
+      "files": 8
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/1512cfe878a84ac48eca5e62f3498134.mp4",
+      "bytes": 2050757,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/8e9c9d3e8852422ebeafe5913407b5f5.wav",
+      "bytes": 573484,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/c387d1f3e73c9f6cf368a36f0c89dadb957039916f10df951c56db400c0ec0eb",
+      "bytes": 1131254,
+      "files": 9
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/8ae32973a7babec302af4ba8c4ed7917e1f1e9cc68fb11ac6a6b073b3f97b78f",
+      "bytes": 5015871,
+      "files": 8
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/feb472d72865487ba86273e67809d691.normalized.wav",
+      "bytes": 241742,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/fd88b7710df34c7389713e624a211913.normalized.wav",
+      "bytes": 661582,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/7b2055c8efd94747907efa0800dc9e59.mp4",
+      "bytes": 10407609,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/32a9c6a01a204e479a95c15fa7bb2659.concat",
+      "bytes": 624,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/29dc975254bf4d7b976676c206270291.wav",
+      "bytes": 241708,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/89ca56769e88d8922065de7638967b3e722ab8a4edfc8df936b49af6be75be32",
+      "bytes": 7519675,
+      "files": 9
+    },
+    {
+      "path": "data/work/temporary/jobs/ba4995ce-689a-4341-892e-eb989055d726/fa35892c459f4369b2943fdef97800ad.normalized.wav",
+      "bytes": 478286,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/3a6e4a1f-84d8-47a1-9aab-1008a6603380",
+      "bytes": 220818572,
+      "files": 433
+    },
+    {
+      "path": "data/work/temporary/jobs/3bface57-fce0-4b43-ab57-b6452022c735/86cf83980fec4350a93343e961be2f31.mp4",
+      "bytes": 8324319,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/3bface57-fce0-4b43-ab57-b6452022c735/13db4b94153f441299a9b4f6c79f24db.concat",
+      "bytes": 1404,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/3bface57-fce0-4b43-ab57-b6452022c735/f4975022232040b89350f335b7475579.mp4",
+      "bytes": 47708070,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/3bface57-fce0-4b43-ab57-b6452022c735/5f8828122ec44c3bb99506ee89bac3bb.concat",
+      "bytes": 1404,
+      "files": 1
+    },
+    {
+      "path": "data/work/temporary/jobs/f8430a50-68b5-446d-aae8-5b45e4c16249",
+      "bytes": 3893614,
+      "files": 6
+    },
+    {
+      "path": "data/work/temporary/jobs/b6f90aa6-ca20-4216-8e0f-af37e3a2b1c5",
+      "bytes": 56037337,
+      "files": 8
+    },
+    {
+      "path": "app/__pycache__",
+      "bytes": 85216,
+      "files": 12
+    },
+    {
+      "path": "app/core/__pycache__",
+      "bytes": 14404,
+      "files": 3
+    },
+    {
+      "path": "app/application/__pycache__",
+      "bytes": 247455,
+      "files": 32
+    },
+    {
+      "path": "app/infrastructure/__pycache__",
+      "bytes": 63578,
+      "files": 12
+    },
+    {
+      "path": "app/domain/__pycache__",
+      "bytes": 85381,
+      "files": 15
+    },
+    {
+      "path": "app/presentation/__pycache__",
+      "bytes": 354874,
+      "files": 36
+    },
+    {
+      "path": "app/infrastructure/sqlite/__pycache__",
+      "bytes": 176123,
+      "files": 18
+    },
+    {
+      "path": "app/infrastructure/media/__pycache__",
+      "bytes": 120871,
+      "files": 13
+    },
+    {
+      "path": "app/engine/pipeline/__pycache__",
+      "bytes": 127442,
+      "files": 9
+    },
+    {
+      "path": "app/engine/ingestion/__pycache__",
+      "bytes": 39597,
+      "files": 5
+    },
+    {
+      "path": "app/engine/timing/__pycache__",
+      "bytes": 23470,
+      "files": 4
+    },
+    {
+      "path": "app/engine/audio/__pycache__",
+      "bytes": 10821,
+      "files": 3
+    },
+    {
+      "path": "app/engine/rendering/__pycache__",
+      "bytes": 34071,
+      "files": 4
+    },
+    {
+      "path": "app/engine/domain/__pycache__",
+      "bytes": 8943,
+      "files": 5
+    },
+    {
+      "path": "ui/__pycache__",
+      "bytes": 4741,
+      "files": 2
+    },
+    {
+      "path": ".DS_Store",
+      "bytes": 8196,
+      "files": 1
+    },
+    {
+      "path": "canales/.DS_Store",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "canales/01_misterios/.DS_Store",
+      "bytes": 6148,
+      "files": 1
+    }
+  ],
+  "removed_generated_bytes": 1672901054,
+  "removed_generated_files": 2788,
+  "preserved_current_bundle": "data/work/exports/deliveries/ba1de147-0815-406d-9382-f65e2b253077/1078d9e83b2c75ecf73d02d41cb0b64b5b2b22c931f910bac56acff03eba0e4d.zip",
+  "preserved_editorial_source_archive": "data/sources/previous-editorial-sources.zip",
+  "metadata_backup": "data/backups/before-cleanup-20261105.sqlite3",
+  "removed_obsolete_documentation_and_aliases": [
+    "docs/data-architecture.md",
+    "docs/phase2-audiovisual-production.md",
+    "docs/architecture.md",
+    "docs/operations.md",
+    "docs/screenshots",
+    "docs/phase2-production-verification.json",
+    "docs/validation.md",
+    "docs/phase15-concurrency-design.md",
+    "docs/phase14-files.md",
+    "docs/phase13-validation.md",
+    "docs/phase2c.md",
+    "docs/calendar-options.md",
+    "docs/phase2a-validation.md",
+    "docs/phase2a-files.md",
+    "docs/project-tree.txt",
+    "docs/openai-visual-preview.md",
+    "docs/phase2b.md",
+    "docs/phase14-validation.md",
+    "docs/ROADMAP_IMPLEMENTACION.md",
+    "docs/consolidation.md",
+    "ui",
+    "config/.channel-store",
+    "app/engine/domain/errors.py"
+  ],
+  "cleanup_status": "completed",
+  "verification": {
+    "sqlite_integrity": "ok",
+    "foreign_key_check": "ok",
+    "visible_work_jobs": 2,
+    "channel_ui": [
+      "MIS",
+      "TEC",
+      "CIE"
+    ],
+    "current_video_hashes": "unchanged",
+    "bundle_hash": "unchanged",
+    "zip_crc": "ok",
+    "tts_voices_available": true,
+    "executor_constructed": true
+  },
+  "full_test_suite": {
+    "tests": 38,
+    "failures": 0,
+    "errors": 0
+  },
+  "contract_check": "valid",
+  "active_python_modules": 61
+}

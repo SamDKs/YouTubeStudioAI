@@ -1,0 +1,22 @@
+{
+  "source_schema": "MIS.editorial.production/1.0",
+  "adapter_version": "1.0.0",
+  "asset_constraints": {
+    "A03": {
+      "required_crop": [
+        0.15,
+        0.04,
+        0.78,
+        0.96
+      ],
+      "reason": "Owner-approved receiver-room crop; requested CODEX_IMPORT.md absent in supplied ZIP."
+    }
+  },
+  "motion_map": {
+    "slow_push_100_to_106_percent": {
+      "kind": "zoom",
+      "start_zoom": 1.0,
+      "end_zoom": 1.06
+    }
+  }
+}

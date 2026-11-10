@@ -1,0 +1,159 @@
+{
+  "verified_at": "2026-11-05",
+  "project_id": "fab89279-494a-4a0a-815c-988ba796d372",
+  "delivery_id": "ba1de147-0815-406d-9382-f65e2b253077",
+  "state": "PARTIAL_DELIVERY",
+  "outputs": [
+    {
+      "slot": "long",
+      "job_id": "3bface57-fce0-4b43-ab57-b6452022c735",
+      "path": "data/work/exports/MIS-E001_en-US/3bface57-fce0-4b43-ab57-b6452022c735/The_Wow_Signal_What_72_Seconds_Actually_Tell_Us__MIS-E001__long__en-US__REVIEW_PENDING.mp4",
+      "sha256": "fa38ad156d626e84ed861ea295bb5f41ae92aa2e74eda450a7798a0ba94cfae8",
+      "duration": 133.733333,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "avg_frame_rate": "30/1"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "avg_frame_rate": "0/0"
+        }
+      ],
+      "srt_cues": 48,
+      "full_decode_verified": true,
+      "quality": {
+        "approved_for_publication": false,
+        "audio_codec": "aac",
+        "audio_levels_db": {
+          "max_volume": -1.0,
+          "mean_volume": -17.5
+        },
+        "black_segments_seconds": [],
+        "decoded_without_ffmpeg_error": true,
+        "duration": 133.733333,
+        "editorial_state": "EDITORIAL_REVIEW_PENDING",
+        "fps": "30/1",
+        "height": 1080,
+        "narrated_scene_count": 9,
+        "silence_segments_seconds": [],
+        "srt_cues": 48,
+        "technical_state": "QA_PASSED",
+        "video_codec": "h264",
+        "warnings": [
+          "Alineación aproximada: revisar subtítulos."
+        ],
+        "width": 1920
+      }
+    },
+    {
+      "slot": "short_01",
+      "job_id": "ba4995ce-689a-4341-892e-eb989055d726",
+      "path": "data/work/exports/MIS-E001_en-US/ba4995ce-689a-4341-892e-eb989055d726/The_Wow_Signal_What_72_Seconds_Actually_Tell_Us__MIS-E001__short__en-US__REVIEW_PENDING.mp4",
+      "sha256": "a31fd10e1f5c71f638300a98efe967b26e46a5acfa599ef7a4cfdfa7034d189e",
+      "duration": 40.766667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1080,
+          "height": 1920,
+          "avg_frame_rate": "30/1"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "avg_frame_rate": "0/0"
+        }
+      ],
+      "srt_cues": 17,
+      "full_decode_verified": true,
+      "quality": {
+        "approved_for_publication": false,
+        "audio_codec": "aac",
+        "audio_levels_db": {
+          "max_volume": -1.0,
+          "mean_volume": -17.4
+        },
+        "black_segments_seconds": [],
+        "decoded_without_ffmpeg_error": true,
+        "duration": 40.766667,
+        "editorial_state": "EDITORIAL_REVIEW_PENDING",
+        "fps": "30/1",
+        "height": 1920,
+        "narrated_scene_count": 4,
+        "silence_segments_seconds": [],
+        "srt_cues": 17,
+        "technical_state": "QA_PASSED",
+        "video_codec": "h264",
+        "warnings": [
+          "Alineación aproximada: revisar subtítulos."
+        ],
+        "width": 1080
+      }
+    }
+  ],
+  "bundle": "data/work/exports/deliveries/ba1de147-0815-406d-9382-f65e2b253077/1078d9e83b2c75ecf73d02d41cb0b64b5b2b22c931f910bac56acff03eba0e4d.zip",
+  "bundle_sha256": "2715e8ec6853d39e525129bfb7709e720a7efac8186dcf14f114bffd48236454",
+  "zip_crc_verified": true,
+  "zip_video_hashes_verified": true,
+  "zip_files": [
+    "long_en-US.mp4",
+    "metadata.json",
+    "project_manifest.json",
+    "qa_report.json",
+    "short_01_en-US.mp4",
+    "subtitles/long_en-US.srt",
+    "subtitles/short_01_en-US.srt",
+    "thumbnail.png"
+  ],
+  "missing_slots": [
+    "short_02",
+    "short_03"
+  ],
+  "approval_blockers": [
+    "Faltan piezas o controles técnicos.",
+    "Derechos pendientes de revisión.",
+    "Hay subtítulos aproximados pendientes de corrección.",
+    "Falta descripción estructurada."
+  ],
+  "real_llm_generation_tested": false,
+  "paid_api_calls": 0,
+  "published": false,
+  "targeted_tests": {
+    "count": 28,
+    "failures": 0,
+    "errors": 0
+  },
+  "full_suite_observation": {
+    "count": 140,
+    "failures": 6,
+    "errors": 12,
+    "note": "Ejecución final: persisten fallos históricos de bootstrap, dashboard y expectativas de migración 010."
+  },
+  "ui_verified": [
+    "global",
+    "MIS",
+    "TEC",
+    "CIE"
+  ],
+  "short_visual_frame_review": {
+    "time_seconds": 12,
+    "result": "Texto legible y dentro del encuadre vertical; rótulos de recreación y captions aproximados visibles. No sustituye revisión completa humana."
+  },
+  "contract_validation": "editorial-package 1.0.0 schema and example valid",
+  "post_cleanup_verification": {
+    "date": "2026-11-05",
+    "current_video_and_zip_hashes": "unchanged",
+    "full_current_suite": {
+      "tests": 38,
+      "failures": 0,
+      "errors": 0
+    },
+    "report": "cleanup-report.json"
+  }
+}

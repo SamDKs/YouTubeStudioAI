@@ -1,0 +1,4 @@
+# Complemento opcional autorizado para Python 3.12 en este Mac Intel.
+# Instalar solo tras revisar docs/LOCAL_TOOLS.md. No incluye modelos ni los descarga.
+kokoro-onnx==0.6.1
+onnxruntime==1.23.2; platform_system == "Darwin" and platform_machine == "x86_64"

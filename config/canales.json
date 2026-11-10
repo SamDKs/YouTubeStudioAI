@@ -1,0 +1,25 @@
+{
+  "channels": [
+    {
+      "id": "MIS",
+      "name": "Misterios e Historias Reales",
+      "category": "Investigación documental",
+      "color": "#b89aff",
+      "folder": "01_misterios"
+    },
+    {
+      "id": "TEC",
+      "name": "Tecnología e Inteligencia Artificial",
+      "category": "Tecnología e IA",
+      "color": "#70c9ff",
+      "folder": "02_tecnologia_ia"
+    },
+    {
+      "id": "CIE",
+      "name": "Ciencia y Curiosidades",
+      "category": "Divulgación científica",
+      "color": "#79dfb0",
+      "folder": "03_ciencia_curiosidades"
+    }
+  ]
+}

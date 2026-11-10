@@ -1,0 +1,97 @@
+{
+  "contract_version": "1.0.0",
+  "package_version": "1.0.0",
+  "episode_id": "EXAMPLE-001",
+  "channel_id": "MIS",
+  "title": "Evidence needs context",
+  "language": "en-US",
+  "target_market": "US",
+  "assets": [
+    {
+      "asset_id": "image-1",
+      "kind": "image",
+      "role": "visual",
+      "path": "assets/scene.png",
+      "sha256": "4679df7c351b0ee62228a4d3d7d2ffbf551f347625ca79cf53aa2865430662b8",
+      "status": "available",
+      "dimensions": {
+        "width": 320,
+        "height": 180
+      },
+      "provenance": {
+        "origin": "user",
+        "generation_status": "not_applicable",
+        "rights_status": "allowed",
+        "author": "YouTube Studio AI test fixture",
+        "license": "CC0 original geometric fixture",
+        "source_url": null
+      },
+      "constraints": {
+        "required_crop": null
+      }
+    }
+  ],
+  "deliverables": [
+    {
+      "deliverable_id": "explainer",
+      "kind": "custom",
+      "title": "Evidence needs context",
+      "resolution": {
+        "width": 640,
+        "height": 360
+      },
+      "fps": 24,
+      "target_duration_seconds": {
+        "min": 0.5,
+        "max": 5.0
+      },
+      "captions": {
+        "mode": "phrase",
+        "on_alignment_failure": "scene_estimates"
+      },
+      "narration_file": null,
+      "scenes": [
+        {
+          "scene_id": "scene-1",
+          "narration": "Evidence needs context.",
+          "asset_id": "image-1",
+          "estimated_duration_seconds": 2.0,
+          "pause_after_seconds": 0.25,
+          "crop": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "fit": "contain",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "motion": {
+            "kind": "static",
+            "start_zoom": 1.0,
+            "end_zoom": 1.0
+          },
+          "transition": {
+            "kind": "fade",
+            "duration_seconds": 0.2
+          },
+          "texts": [
+            {
+              "text": "TEST FIXTURE — NOT A FINISHED EPISODE",
+              "kind": "disclosure",
+              "position": "top",
+              "required": true
+            }
+          ],
+          "editorial_references": []
+        }
+      ]
+    }
+  ],
+  "editorial_references": [],
+  "checksums": {
+    "assets/scene.png": "4679df7c351b0ee62228a4d3d7d2ffbf551f347625ca79cf53aa2865430662b8"
+  }
+}
